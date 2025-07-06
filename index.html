@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodpanda Navbar</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      width: 100%;
+      height: 80px; 
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%; 
+      padding: 0 70px; 
+    }
+
+    .logo img {
+      height: 150px;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .button {
+  display: flex; 
+  gap: 20px; 
+}
+    .button button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .button .one {
+      background-color:#fa1f7a;
+      color: white;
+    }
+  .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .icon i {
+      font-size: 48px;
+      color: #a6a6a6;
+    }
+
+    
+  
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dropdown i {
+      font-size: 18px;
+      color: #333; 
+    }
+
+    .dropdown select {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+   .custom-section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.custom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 70px;
+}
+
+.search-container {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+}
+
+.locate-btn,
+.find-btn {
+    padding: 10px 16px;
+}
+
+.foodpanda {
+    width: 30%;
+    text-align: center;
+}
+
+.foodpanda img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.foodheading {
+  text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 0px 16px;
+}
+h1{
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 0px 16px;
+}
+.search-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    border-radius: 5px
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar .locate-btn,
+.search-bar .find-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar .locate-btn {
+    background-color: #f8f9fa;
+    color: #d63384;
+    border: 1px solid #d63384;
+}
+
+.search-bar .find-btn {
+    background-color: #d63384;
+    color: #fff;
+}
+.food{
+
+  margin-top: 50px;
+
+}
+.foodimg{
+ position: relative;
+      margin-top: 50px;
+  display: flex;
+}
+.foodimg img{
+  width: 100%;
+  height:405px;
+}
+.bussniess {
+     text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 0px 70px;}
+.overlay-bussniess {
+        position: absolute;
+    bottom: -21px;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #FDF2F7;
+    color: black;
+    padding: 28px 20px;
+    border-radius: 15px;
+    height: 150px;
+    width: 508px;
+}
+.overlay-bussniess h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.overlay-bussniess p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.overlay-text {
+      position: absolute;
+       bottom: -21px;
+      left: 30%;
+    transform: translateX(-50%);
+    background-color: #FDF2F7;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+        height: 250px;
+    width: 508px;
+
+; 
+}
+.overlay-text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.overlay-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.get-started-btn {
+  background-color: #e21b70;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.city-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.city-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+      text-align: left;
+    padding: 10px 32px;
+}
+
+.city-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.city-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.newcity{
+      position: absolute;
+    bottom: 7px;
+    left: 22%;
+    transform: translateX(-36%);
+    background-color: #fff;
+    color: #333333;
+    padding: 5px 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 1px solid #ebebeb !important;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+.city-name {
+    position: absolute;
+       bottom: 7px;
+    left: 22%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #333333;
+    padding: 5px 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 1px solid #ebebeb !important;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+.slider {
+  padding: 60px 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+.promo-section {
+  background-color: #e0007a;
+  color: white;
+  padding: 60px 18px;
+  display: flex;
+  flex-wrap: wrap;
+      justify-content: space-between;
+  width: 90%;
+}
+
+.promo-text {
+      max-width: 500px;
+}
+
+.promo-text h2 {
+  font-size: 28px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.store-buttons img {
+  width: 140px;
+  height: 45px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.promo-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promo-images img {
+      height: 383px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+    margin-top: -148px;
+}
+.qr-text-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) invert(1);
+}
+
+.qr-text-row p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+.faq-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-container {
+     max-width: 1175px;
+  width: 95%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  line-height: 2.2rem;
+  color: #222;
+}
+
+.faq-text {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  color: #444;
+}
+
+.faq-text a {
+  color: #e0007a;
+  text-decoration: none;
+}
+
+.faq-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.faq-list li {
+  line-height: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+.faq-list li span {
+  color: #e0007a;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.indented {
+  padding-left: 1.5rem;
+}
+
+.faq-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.faq-subheading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 2rem;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 1.5rem;
+}
+.custom-footer {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+/* Countries Row */
+.footer-countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-countries a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 1.5rem 0;
+}
+
+/* Footer Grid */
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-col a {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #e0007a;
+}
+
+/* Branding */
+.footer-branding {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-branding  img{
+  height: 100px;
+}
+
+.footer-logos img {
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.footer-socials img {
+  width: 24px;
+  margin-left: 1rem;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo">
+        <img src="https://download.logo.wine/logo/Foodpanda/Foodpanda-Logo.wine.png" alt="Foodpanda Logo">
+      </div>
+      <div class="right-section">
+        <div class="button">
+          <button>Login</button>
+          <button class="one">Sign Up</button>
+        </div>
+        <div class="dropdown">
+          <i class="fa-solid fa-globe"></i>
+          <select name="lang">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option> 
+          </select>
+        </div>
+      <div class="icon">
+  <i class='bx bx-cart'></i>
+</div>
+
+      </div>
+    </div>
+  </nav>
+
+   <section class="custom-section">
+        <div class="custom-container">
+            <div class="search-container">
+                <h1>Enjoy discounts on your first order</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter your address" />
+                    <button class="locate-btn">Locate me</button>
+                    <button class="find-btn">Find food</button>
+                </div>
+            </div>
+            <div class="foodpanda">
+                <img src="foodpanda.webp" alt="Promo Image" />
+            </div>
+
+           
+        </div>
+    </section>
+    <section class="food">
+      <h1 class="foodheading">You prepare the food, we handle the rest</h1>
+      <div class="foodimg">
+           <img class="img" src="home-vendor-pk.jpg" alt="">
+            <div class="overlay-text">
+               <h2>List your restaurant or shop on foodpanda</h2>
+  <p>
+    Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+  </p>
+  <p>
+    It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!
+  </p>
+  <p>
+    Interested? Let’s start our partnership today!
+  </p>
+  <button class="get-started-btn">Get started</button>
+            </div>
+      </div>
+    </section>
+
+
+       <section class="city-section">
+        <h2>Find us in these cities and many more!</h2>
+        <div class="city-container">
+            <!-- Individual City Cards -->
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="islamabad.jpg" alt="Islamabad">
+                    <p class="city-name">Islamabad</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="Karachi.webp" alt="Karachi">
+                    <p class="city-name">Karachi</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="Lahore.webp" alt="Lahore">
+                    <p class="city-name">Lahore</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="Faisalabad.webp" alt="Faisalabad">
+                    <p class="city-name">Faisalabad</p>
+                </div>
+            </div>
+             <div class="city-card">
+                <div class="image-container">
+                    <img src="Rawalpindi.webp" alt="Rawalpindi">
+                    <p class="city-name">Rawalpindi</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="city-tile-Abottabad.webp" alt="abbottabad">
+                    <p class="city-name">Abbottabad</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="city-tile-Bahawalpur.webp" alt="bahawalpur">
+                    <p class="city-name">Bahawalpur</p>
+                </div>
+            </div>
+            <div class="city-card">
+                <div class="image-container">
+                    <img src="Rawalpindi.webp" alt="dera-ghazi-khan">
+                    <p class="newcity">  Dera Ghazi khan</p>
+                </div>
+            </div>
+            <div class="city-card">
+    <div class="image-container">
+        <img src="city-tile-Gujranwala.webp" alt="gujranwala">
+        <p class="city-name">Gujranwala</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="city-tile-Gujrat.jpg.webp" alt="gujrat">
+        <p class="city-name">Gujrat</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Hyderabad.webp" alt="hyderabad">
+        <p class="city-name">Hyderabad</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="city-tile-Jhelum.webp" alt="jhelum">
+        <p class="city-name">Jhelum</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Kamoke.webp" alt="kamoke">
+        <p class="city-name">Kamoke</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Larkana.jpg" alt="larkana">
+        <p class="city-name">Larkana</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Mangla.jpg" alt="mangla">
+        <p class="city-name">Mangla</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Mardan.jpg" alt="mardan">
+        <p class="city-name">Mardan</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Multan.jpg" alt="multan">
+        <p class="city-name">Multan</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Murree.jpg" alt="murree">
+        <p class="city-name">Murree</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Okara.jpg" alt="okara">
+        <p class="city-name">Okara</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="PanoAqil.jpg" alt="paroa-aqi">
+        <p class="city-name">Paroa Aqil</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Peshawar.jpg" alt="peshawar">
+        <p class="city-name">Peshawar</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Quetta.webp" alt="quetta">
+        <p class="city-name">Quetta</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="RahimYarKhan.webp" alt="rahim-yar-khan">
+        <p class="city-name">Rahim Yar Khan</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sadiqabad.webp" alt="sadiqabad">
+        <p class="city-name">Sadiqabad</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sahiwal.webp" alt="sahiwal">
+        <p class="city-name">Sahiwal</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sargodha.webp" alt="sargodha">
+        <p class="city-name">Sargodha</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sheikhupura.jpg" alt="sheikhupura">
+        <p class="city-name">Sheikhupura</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sialkot.webp" alt="sialkot">
+        <p class="city-name">Sialkot</p>
+    </div>
+</div>
+
+<div class="city-card">
+    <div class="image-container">
+        <img src="Sukkur.webp" alt="Sukkur">
+        <p class="city-name">Sukkur</p>
+    </div>
+</div>
+<div class="city-card">
+    <div class="image-container">
+        <img src="WahhCannt.webp" alt="WahhCannt">
+        <p class="city-name">Wahh Cannt</p>
+    </div>
+</div> 
+<div class="city-card" style="visibility: hidden;">
+    <div class="image-container">
+        <img src="Sialkot.webp" alt="sialkot">
+        <p class="city-name">Sialkot</p>
+    </div>
+</div>
+<div class="city-card" style="visibility: hidden;">
+    <div class="image-container">
+        <img src="Sargodha.webp" alt="sargodha">
+        <p class="city-name">Sargodha</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+<section class="slider">
+  <div class="promo-section">
+    <div class="promo-text">
+      <h2>Download the food and groceries you love</h2>
+             <div class="qr-text-row">
+          <div class="qr-code">
+            <img src="QR_Code_example.png" alt="QR Code">
+          </div>
+          <p>
+            It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.
+          </p>
+        </div>
+
+      <div class="store-buttons">
+        <img src="App Store.png" alt="App Store">
+        <img src="play-store.png" alt="Google Play">
+        <img src="appgla.png" alt="App Gallery">
+      </div>
+    </div>
+    <div class="promo-images">
+      <img src="slider.webp" alt="App Screenshot 1">
+    </div>
+  </div>
+</section>
+ <section class="food">
+      <h1 class="bussniess">Take your office out to lunch
+</h1>
+      <div class="foodimg">
+           <img class="img" src="home-corporate-pk.webp" alt="">
+            <div class="overlay-bussniess">
+               <h2>foodpanda for business</h2>
+  <p>
+    Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+
+  </p>
+
+  
+  <button class="get-started-btn">Get started</button>
+            </div>
+      </div>
+    </section>
+
+<section class="faq-section">
+  <div class="faq-container">
+    <p class="faq-heading">
+      Order food and groceries online from the best restaurants and shops on foodpanda
+    </p>
+    <p class="faq-text">
+  Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long
+   and detailed list of the best restaurants and shops near you to help make your every day easier.
+
+    </p>
+
+    <p class="faq-heading">What's new?</p>
+    <ul class="faq-list">
+      <li><span>✓</span> Selection of premium restaurants, all kinds of cuisines.</li>
+      <li><span>✓</span> High quality delivery service.</li>
+      <li><span>✓</span> Live chat feature to give App users instant help when they need it.</li>
+      <li><span>✓</span> NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.</li>
+    </ul>
+
+    <div class="faq-divider"></div>
+
+    <p class="faq-subheading">Frequently Asked Questions</p>
+
+    <p class="faq-question">How can I get foodpanda delivery?</p>
+    <p class="faq-text">
+      To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!
+    </p>
+
+    <p class="faq-question">Which takeout restaurants open now near me?</p>
+    <p class="faq-text">You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to your area.</p>
+  
+
+    <p class="faq-question">Does foodpanda deliver 24 hours?</p>
+    <p class="faq-text">Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by
+       using your address. You can also order groceries 24 hours a day via pandamart.</p>
+
+    <p class="faq-question">Can you pay cash for foodpanda?</p>
+    <p class="faq-text">Yes, cash on delivery is available for foodpanda in Pakistan.</p>
+
+    <p class="faq-question">How can I pay foodpanda online?</p>
+    <p class="faq-text">You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</p>
+
+    <p class="faq-question">Can I order foodpanda for someone else?</p>
+    <p class="faq-text">Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are not correct
+       and the order cannot be delivered, we won't be able to process a refund.</p>
+
+    <p class="faq-question">How much does foodpanda charge for delivery?</p>
+    <p class="faq-text">Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and the restaurant you are ordering from. You can always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on the
+       "Free Delivery" icon at the top of your restaurant listing.</p>
+
+    <p class="faq-question">What restaurants let you order online?</p>
+    <p class="faq-text">
+     There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, <a href="#">KFC</a>, <a href="#">McDonald's</a>, <a href="#">Pizza Hut</a>, <a href="#">OPTP</a>, <a href="#">Hardee's</a>, <a href="#">Domino's</a>, <a href="#">Kababjees</a>
+      many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.
+    </p>
+
+    <p class="faq-question">Does foodpanda have minimum order?</p>
+    <p class="faq-text">Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order
+       from and is indicated during your ordering process.</p>
+
+    <p class="faq-question">What is the difference between delivery and Pick-Up?</p>
+    <p class="faq-text">
+If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for extra savings – 
+and to jump to the front of the queue. Pick-Up orders are available for restaurants only.
+
+    </p>
+    <strong>
+      Order food and groceries online with foodpanda now and enjoy a great dining experience!
+    </strong>
+  </div>
+</section>
+<footer class="custom-footer">
+  <!-- Countries Row -->
+  <section class="footer-countries">
+    <a href="#">Laos</a>
+    <a href="#">Cambodia</a>
+    <a href="#">Myanmar</a>
+    <a href="#">Thailand</a>
+    <a href="#">Hong Kong</a>
+    <a href="#">Taiwan</a>
+    <a href="#">Malaysia</a>
+    <a href="#">Philippines</a>
+    <a href="#">Singapore</a>
+    <a href="#">Bangladesh</a>
+  </section>
+
+  <div class="footer-divider"></div>
+
+  <!-- Footer Links Grid -->
+  <section class="footer-grid">
+     <div class="footer-col">
+    <p></p>© foodpanda</p>
+    </div>
+    <div class="footer-col">
+      <a href="#">Press</a>
+      <a href="#">pandapay Terms and Conditions</a>
+      <a href="#">Security</a>
+      <a href="#">Careers</a>
+      <a href="#">Cashback Terms and Conditions</a>
+      <a href="#">Partner with Us</a>
+      <a href="#">All cities</a>
+      <a href="#">pandapro - Monthly Subscription Programme</a>
+      <a href="#">Ramzan deals</a>
+      <a href="#">Areas delivered in Lahore</a>
+    </div>
+
+    <div class="footer-col">
+      <a href="#">Help Center</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Download foodpanda Apps</a>
+      <a href="#">Suggest a Restaurant</a>
+      <a href="#">All cuisines</a>
+      <a href="#">pandago - Request a Rider</a>
+      <a href="#">Update on COVID-19 in Pakistan</a>
+      <a href="#">foodpanda Home Chef</a>
+      <a href="#">Areas delivered in Karachi</a>
+      <a href="#">Areas delivered in Islamabad</a>
+    </div>
+
+    <div class="footer-col">
+      <a href="#">Refunds with pandapay</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Human rights policy</a>
+      <a href="#">Corporate Customer</a>
+      <a href="#">foodpanda Magazine</a>
+      <a href="#">foodpanda Vouchers & Coupons</a>
+      <a href="#">pandamart Grocery Delivery</a>
+      <a href="#">Become an Affiliate</a>
+      <a href="#">Areas delivered in Gujranwala</a>
+      <a href="#">Areas delivered in Peshawar</a>
+    </div>
+  </section>
+
+  <div class="footer-divider"></div>
+
+  <!-- Branding Section -->
+  <section class="footer-branding">
+        <img src="https://download.logo.wine/logo/Foodpanda/Foodpanda-Logo.wine.png" alt="Foodpanda Logo">
+
+        <img src="delivery-hero5785.jpg" alt="">
+   
+   
+  </section>
+</footer>
+
+
+
+</body>
+</html>
